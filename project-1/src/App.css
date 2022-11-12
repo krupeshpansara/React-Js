@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+
+.toodo{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.background_imge{
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+.toodo_box_A{
+    width: 30vw;
+    height: 85vh;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.3),
+    inset 20px 20px 20px rgba(255,255,255,0.3);
+    background-color: rgba(255,255,255,0.4);
+    display: flex;
+    justify-content: center;
+}
+.toodo_box_B{
+    width: 25vw;
+}
+h1{
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    padding: 10px 0px ;
+}
+.input_box{
+    width: 100%;
+}
+.input_box input{
+    width: 83%;
+    font-size: 1.2rem;
+    outline: none;
+    height: 30px;
+    padding-left: 10px;
+    border: none;
+    background: transparent;
+    color: black;
+    border:2px solid gray;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+.input_box button{
+    width: 55px;
+    padding: 3px;
+    margin-left: 5px;
+    background: transparent;
+    text-align: center;
+    font-size: 1.2rem;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    font-weight: 700;
+    color: white;
+    background: green;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+
+
+}
+.toodo_list{
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    
+}
+.toodo_items_box{
+    width: 100%;
+    height: 30px;
+    border-radius: 50px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.items_name{
+    width: 70%;
+    font-size: 1.1rem;
+}
+.btn_group{
+    width: 60px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.btn_group div{
+    width: 27px ;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.btn_group div:nth-child(1):hover{
+    background: green;
+    color: white;
+}
+.btn_group div:nth-child(2):hover{
+    background: red;
+    color: white;
+}
+.btn{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+.btn button{
+    width: 40%;
+    height: 40px;
+    background: red;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    color: white;
+}
